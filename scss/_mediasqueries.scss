@@ -67,12 +67,18 @@
     // Nakamas
     .nakamas {
         grid-template-columns: 1fr 1fr;
+        h3 {
+            display: none;
+        }
 
         .imgNakamas {
 
             width: auto;
             height: auto;
         }
+    }
+    .nombreJinbe {
+        display: none;
     }
 
 

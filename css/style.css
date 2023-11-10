@@ -209,9 +209,15 @@ footer .pieDePagina {
   .nakamas {
     grid-template-columns: 1fr 1fr;
   }
+  .nakamas h3 {
+    display: none;
+  }
   .nakamas .imgNakamas {
     width: auto;
     height: auto;
+  }
+  .nombreJinbe {
+    display: none;
   }
   /*sucursales 850px*/
   .mapas {
