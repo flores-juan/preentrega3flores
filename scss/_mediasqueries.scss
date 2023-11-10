@@ -67,9 +67,7 @@
     // Nakamas
     .nakamas {
         grid-template-columns: 1fr 1fr;
-        h3 {
-            display: none;
-        }
+
 
         .imgNakamas {
 
@@ -77,9 +75,7 @@
             height: auto;
         }
     }
-    .nombreJinbe {
-        display: none;
-    }
+
 
 
 
@@ -178,9 +174,6 @@
             }
         }
 
-        h3 {
-            display: none;
-        }
     }
 
     /*sucursales 550px*/
@@ -194,8 +187,4 @@
         }
     }
 
-    // nombre jinbe
-    .nombreJinbe {
-        display: none;
-    }
 }
