@@ -1,0 +1,53 @@
+/*SUCURSALES*/
+
+.mapas {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 40px;
+    margin: 30px;
+}
+
+
+/*Estilo a la tienda*/
+
+.img-fluid {
+    @include tamañoDeImagenes;
+
+}
+
+
+.tienda {
+    .img-fluid {
+
+        object-fit: cover;
+        box-shadow: 0 5px 45px rgb(0 0 0 / 55%);
+
+        &:hover {
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+
+        }
+    }
+}
+
+.tienda {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 40px;
+}
+
+// Etilo de Nakamas
+.nakamas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 40px;
+
+    .imgNakamas {
+        width: 250px;
+        height: 200px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+}

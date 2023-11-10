@@ -1,0 +1,195 @@
+/*Medias Queries*/
+
+/*sucursales 1400px*/
+.mapas {
+    @media (max-width: 1400px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3 {
+            display: none;
+        }
+    }
+}
+
+
+/*Media queries para la tienda*/
+
+@media (max-width: 850px) {
+    /*header 850px*/
+
+    header {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: 0.5rem;
+        height: auto;
+
+        img {
+            display: none;
+        }
+    }
+
+    /*body 850px*/
+
+    body {
+        &::before {
+            content: "";
+            background-color: $background-capa850px;
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    /*parrafocentral 850px*/
+
+    .parrafoCentral {
+        font-weight: 400;
+    }
+
+    /*Tienda 850px*/
+
+    .tienda {
+        .img-fluid {
+            width: 150px;
+            height: 150px;
+
+            &:hover {
+                -webkit-transform: scale(1.3);
+                transform: scale(1.3);
+            }
+        }
+    }
+
+    // Nakamas
+    .nakamas {
+        grid-template-columns: 1fr 1fr;
+
+        .imgNakamas {
+
+            width: auto;
+            height: auto;
+        }
+    }
+
+
+
+    /*sucursales 850px*/
+
+    .mapas {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        width: 500px;
+        align-items: center;
+        margin: auto;
+
+        iframe {
+            width: auto;
+            height: auto;
+        }
+    }
+}
+
+/*mweia queries 550px*/
+
+@media (max-width: 550px) {
+
+    html {
+        height: 100%;
+    }
+
+    /*header 550px*/
+    header {
+
+        border-bottom: 0.5px black solid;
+
+        nav {
+            ul {
+                padding: 0%;
+                flex-wrap: wrap;
+            }
+
+            li {
+                font-size: 1rem;
+
+                a {
+                    padding: 20px;
+                }
+            }
+        }
+    }
+
+    /*body 550px*/
+    body {
+        margin: 0px;
+        min-height: 100%;
+        height: auto;
+
+        &::before {
+            content: "";
+            background-color: $background-capa550px;
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    /*titulos y parrafos 550px*/
+
+    h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        text-decoration: none;
+        margin: 10px;
+    }
+
+    .parrafoCentral {
+        text-align: justify;
+        font-size: 0.9rem;
+        margin: 10px;
+    }
+
+    /*tienda 550px*/
+    .tienda {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    section {
+        img {
+            &:hover {
+                -webkit-transform: scale(1.3);
+                transform: scale(1.3);
+            }
+        }
+
+        h3 {
+            display: none;
+        }
+    }
+
+    /*sucursales 550px*/
+    .mapas {
+        width: 50%;
+        height: 50%;
+
+        iframe {
+            width: auto;
+            height: auto;
+        }
+    }
+
+    // nombre jinbe
+    .nombreJinbe {
+        display: none;
+    }
+}

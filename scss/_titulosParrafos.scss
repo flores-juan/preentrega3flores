@@ -1,0 +1,67 @@
+/*EStilo al h1*/
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    text-decoration: underline;
+}
+
+/*Estilo al h2*/
+
+h2 {
+    font-size: 2rem;
+    text-decoration: underline;
+    margin: 15px;
+    text-align: center;
+}
+
+/*Estilo a los textos*/
+
+.parrafoCentral {
+    font-size: 1.3rem;
+    margin: 15px;
+    font-weight: 600;
+    padding: 30px;
+    text-align: justify, center;
+
+    strong {
+        a {
+            color: $color--anclas;
+        }
+    }
+}
+
+/*Estilo al body*/
+body {
+    min-height: 100vh;
+    background-image: url(../img/background-onePiece1.png);
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 0px;
+
+    &::before {
+        content: "";
+        background-color: $background-capa;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+
+    }
+
+}
+
+//nombre jinbe
+.nombreJinbe {
+    padding-left: 40px;
+}
+
+/*Estilo h3*/
+
+h4 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 15px;
+}

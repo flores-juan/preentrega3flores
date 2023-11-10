@@ -1,0 +1,12 @@
+/*FOOTER*/
+footer {
+    .pieDePagina {
+        
+        @include footer;
+        @include flexCenter;
+        width: 100%;
+        height: 40px;
+        margin: 0%;
+        margin-top: 20px;
+    }
+}
